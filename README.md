@@ -1,5 +1,10 @@
 # 📱 iOS Developer Portfolio
 
+![Status](https://badgen.net/badge/status/in%20progress/yellow)
+![Built with](https://badgen.net/badge/Built%20with/Next.js/blue)
+![Styling](https://badgen.net/badge/Styling/TailwindCSS/purple)
+![Deployed](https://badgen.net/badge/Deployed%20on/Vercel/green)
+
 My little corner of the Internet as an iOS developer. Here I share what I build, what I learn, and where I’m headed.
 
 Built using Next.js and Tailwind CSS.
@@ -14,11 +19,13 @@ Built using Next.js and Tailwind CSS.
 
 ## 🛠️ Tech Stack
 
-- [Next.js](https://nextjs.org/) – React framework for building fast, scalable websites
-- [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework for modern UI design
-- [Markdown](https://www.markdownguide.org/) – Lightweight markup language for structured content
-- [GitHub](https://github.com/) – Version control and code collaboration
-- [Vercel](https://vercel.com/) – Deployment platform for frontend frameworks
+![Next.js](https://badgen.net/badge/Built%20with/Next.js/blue?icon=nextjs&label=) – React framework for building fast, scalable websites  
+![Tailwind CSS](https://badgen.net/badge/Styling/TailwindCSS/purple?icon=tailwindcss&label=) – Utility-first CSS framework for modern UI design  
+![Markdown](https://badgen.net/badge/Content/Markdown/orange?icon=markdown&label=) – Lightweight markup language for structured content  
+![GitHub](https://badgen.net/badge/Version%20Control/GitHub/black?icon=github&label=) – Version control and code collaboration  
+![Vercel](https://badgen.net/badge/Deploy/Vercel/green?icon=vercel&label=) – Deployment platform for frontend frameworks
+
+---
 
 ## 📁 Project Structure
 
@@ -28,10 +35,15 @@ Built using Next.js and Tailwind CSS.
 /content       # Blog post data (JSON or Markdown)
 /public        # Static files (images, icons, etc.)
 /styles        # Global CSS (Tailwind config, if needed)
+```
+
+---
 
 ## 🧩 Features
 
 -
+
+---
 
 ## 🚧 Roadmap
 
@@ -44,11 +56,12 @@ Built using Next.js and Tailwind CSS.
 - [ ] Improve layout with animations and transitions
 - [ ] Add long-form article support via Markdown
 
+---
+
 ## 🤝 Contact
 
 Feel free to connect or reach out:
 
 - [GitHub](https://github.com/franciscoxcode)
 - [LinkedIn](https://www.linkedin.com/in/franciscoxcode/)
-- 📬 Email: [fxcasillas.dev@gmail.com](mailto:fxcasillas.dev@gmail.com)
-```
+- [Email](mailto:fxcasillas.dev@gmail.com)
