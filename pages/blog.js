@@ -1,36 +1,51 @@
-import { blogPosts } from "../content/blogPosts";
+import { useState } from "react";
+import { blogPosts } from "@/content/blogPosts";
 
-export default function Blog() {
+export default function BlogPage() {
+	const [visibleCount, setVisibleCount] = useState(6); // 👀 número inicial de posts visibles
+
+	const handleLoadMore = () => {
+		setVisibleCount((prev) => prev + 6); // 🔁 carga 6 más por clic
+	};
+
 	return (
-		<main className="max-w-2xl mx-auto px-4 py-10">
-			<h1 className="text-3xl font-bold mb-8">Blog</h1>
-			<div className="space-y-8">
-				{blogPosts.map((post, index) => (
-					<div key={index} className="p-5 border rounded-xl shadow-sm bg-white">
-						<p className="text-sm text-gray-500">{post.date}</p>
-						<p className="text-gray-800 mt-1 whitespace-pre-line">
-							{post.content}
-						</p>
-						{post.image && (
-							<img
-								src={post.image}
-								alt="Post screenshot"
-								className="mt-4 rounded-lg border"
-							/>
-						)}
-						<div className="mt-3 flex flex-wrap gap-2">
-							{post.tags.map((tag, i) => (
-								<span
-									key={i}
-									className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded-md"
-								>
-									#{tag}
-								</span>
-							))}
-						</div>
+		<div className="max-w-2xl mx-auto px-4 py-12">
+			<h1 className="text-3xl font-bold mb-8">📓 Blog Feed</h1>
+
+			{blogPosts.slice(0, visibleCount).map((post, index) => (
+				<div key={index} className="mb-10 border-b border-gray-200 pb-6">
+					<p className="text-sm text-gray-500 mb-2">{post.date}</p>
+					{post.image && (
+						<img
+							src={post.image}
+							alt="Post visual"
+							className="w-full h-auto rounded-md mb-3"
+						/>
+					)}
+					<p className="text-lg text-gray-800">{post.content}</p>
+					<div className="flex flex-wrap gap-2 mt-3">
+						{post.tags.map((tag, i) => (
+							<span
+								key={i}
+								className="text-sm bg-gray-100 text-gray-600 px-2 py-1 rounded"
+							>
+								#{tag}
+							</span>
+						))}
 					</div>
-				))}
-			</div>
-		</main>
+				</div>
+			))}
+
+			{visibleCount < blogPosts.length && (
+				<div className="text-center">
+					<button
+						onClick={handleLoadMore}
+						className="mt-6 px-4 py-2 text-blue-600 font-medium border border-blue-600 rounded hover:bg-blue-50 transition"
+					>
+						Load more posts ↓
+					</button>
+				</div>
+			)}
+		</div>
 	);
 }
