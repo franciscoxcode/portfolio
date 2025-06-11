@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { blogPosts } from "@/content/blogPosts";
+import { formatDate } from "@/lib/formatDate";
 
 export default function BlogPage() {
 	const [visibleCount, setVisibleCount] = useState(6); // 👀 número inicial de posts visibles
@@ -14,7 +15,7 @@ export default function BlogPage() {
 
 			{blogPosts.slice(0, visibleCount).map((post, index) => (
 				<div key={index} className="mb-10 border-b border-gray-200 pb-6">
-					<p className="text-sm text-gray-500 mb-2">{post.date}</p>
+					<p className="text-sm text-gray-500 mb-2">{formatDate(post.date)}</p>
 					{post.image && (
 						<img
 							src={post.image}
