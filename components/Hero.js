@@ -62,7 +62,7 @@ export default function Hero() {
 				<p className="text-gray-700 text-lg leading-relaxed mb-6">
 					Welcome to my developer portfolio — a space to share what I build and
 					learn as I grow. I’m a future iOS Developer currently finishing my
-					degree and building apps using SwiftUI, UIKit, and other Apple
+					degree and building apps using SwiftUI UIKit, and other Apple
 					technologies.
 				</p>
 				<p className="text-gray-600 mb-8">
