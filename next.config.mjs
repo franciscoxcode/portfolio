@@ -6,4 +6,9 @@ const nextConfig = {
 	},
 };
 
-export default nextConfig;
+const createMDX = await import("@next/mdx");
+const withMDX = createMDX.default({
+	extension: /\.mdx?$/,
+});
+
+export default withMDX(nextConfig);
