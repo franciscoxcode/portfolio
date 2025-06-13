@@ -5,8 +5,7 @@
 ![Styling](https://badgen.net/badge/Styling/TailwindCSS/purple)
 ![Deployed](https://badgen.net/badge/Deployed%20on/Vercel/green)
 
-My little corner of the Internet as an iOS developer. Here I share what I build, what I learn, and where I’m headed.
-
+My little corner of the Internet as an iOS developer. Here I share what I build, what I learn, and where I’m headed.  
 Built using Next.js and Tailwind CSS.
 
 ---
@@ -14,6 +13,12 @@ Built using Next.js and Tailwind CSS.
 ## 🌐 Live Preview
 
 🔗 [Visit the site](https://portfolio-zeta-dun-44.vercel.app)
+
+
+---
+## 📷 Screenshot
+
+<img width="949" alt="Screenshot 2025-06-12 at 6 44 15 p m" src="https://github.com/user-attachments/assets/ffc05bb4-3c74-4777-bd17-53c0d9906a12" />
 
 ---
 
