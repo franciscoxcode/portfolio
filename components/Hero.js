@@ -49,7 +49,7 @@ export default function Hero() {
 						<FaTwitter />
 					</a>
 					<a
-						href="mailto:franciscoxcode@gmail.com"
+						href="mailto:fxcasillas.dev@gmail.com"
 						className="text-gray-600 hover:text-black text-xl"
 					>
 						<FaEnvelope />
@@ -60,7 +60,7 @@ export default function Hero() {
 			{/* Panel derecho: intro + botón */}
 			<div>
 				<h1 className="text-2xl font-bold mb-6">About Me</h1>
-				<p className="text-gray-700 text-lg leading-relaxed mb-6">
+				<p className="text-gray-700 text-md leading-relaxed mb-6">
 					I’m Francisco, an iOS developer from Mexico City with a background in
 					Audiovisual Communication, currently studying Computer Systems
 					Engineering and specializing in iOS development.

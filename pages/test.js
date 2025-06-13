@@ -1,6 +1,5 @@
 import { getPostBySlug } from "@/lib/mdx";
 import { MDXRemote } from "next-mdx-remote";
-import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
 export async function getStaticProps() {
@@ -15,8 +14,6 @@ export async function getStaticProps() {
 export default function TestPage({ post }) {
 	return (
 		<>
-			<Navbar />
-
 			<main className="max-w-2xl mx-auto px-4 py-12">
 				<h1 className="text-3xl font-bold mb-4">{post.frontMatter.title}</h1>
 				<p className="text-sm text-gray-500 mb-8">{post.frontMatter.date}</p>

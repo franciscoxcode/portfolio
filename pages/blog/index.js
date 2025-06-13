@@ -4,7 +4,6 @@ import matter from "gray-matter";
 import Link from "next/link";
 import Image from "next/image";
 import { formatDate } from "@/lib/formatDate";
-import Navbar from "@/components/Navbar";
 
 export async function getStaticProps() {
 	const postsDirectory = path.join(process.cwd(), "posts");
@@ -31,7 +30,6 @@ export async function getStaticProps() {
 export default function BlogIndex({ posts }) {
 	return (
 		<>
-			<Navbar />
 			<main className="max-w-3xl mx-auto px-4 py-12">
 				<h1 className="text-4xl font-bold mb-10">📚 Blog</h1>
 

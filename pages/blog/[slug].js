@@ -1,7 +1,6 @@
 import { getPostBySlug, getAllPostSlugs } from "@/lib/mdx";
 import { formatDate } from "@/lib/formatDate";
 import { MDXRemote } from "next-mdx-remote";
-import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
 export async function getStaticPaths() {
@@ -22,7 +21,6 @@ export async function getStaticProps({ params }) {
 export default function BlogPostPage({ post }) {
 	return (
 		<>
-			<Navbar />
 			<main className="max-w-2xl mx-auto px-4 py-12">
 				<h1 className="text-3xl font-bold mb-4">{post.frontMatter.title}</h1>
 				<p className="text-sm text-gray-500 mb-8">{post.frontMatter.date}</p>
