@@ -2,6 +2,7 @@ import { getPostBySlug, getAllPostSlugs } from "@/lib/mdx";
 import { formatDate } from "@/lib/formatDate";
 import { MDXRemote } from "next-mdx-remote";
 import Image from "next/image";
+import Link from "next/link";
 
 export async function getStaticPaths() {
 	const slugs = getAllPostSlugs();
@@ -30,12 +31,9 @@ export default function BlogPostPage({ post }) {
 				</article>
 
 				<div className="mt-10">
-					<a
-						href="/blog"
-						className="inline-block text-blue-600 underline hover:text-blue-800 transition"
-					>
-						← Back to Blog
-					</a>
+					<Link href="/blog" className="text-blue-600 hover:underline">
+						Back to blog
+					</Link>
 				</div>
 			</main>
 		</>
