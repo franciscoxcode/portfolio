@@ -1,48 +1,49 @@
-import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
 	return (
-		<footer className="w-full border-t py-3 mt-20 relative">
-			<div className="w-full max-w-none px-6 relative h-6">
-				{/* Contenedor de los extremos */}
-				<div className="flex justify-between items-center w-full">
-					{/* Izquierda */}
-					<div className="text-sm text-gray-500">© 2025 Francisco Casillas</div>
-
-					{/* Derecha */}
-					<div className="text-xs text-gray-500">
-						Built with Next.js & Tailwind — Crafted with care 💻
-					</div>
+		<footer className="bg-white border-t border-gray-200 text-sm px-6 py-4">
+			<div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2.5">
+				{/* Left: Name */}
+				<div className="text-gray-500 w-full md:w-auto text-center md:text-left">
+					© {new Date().getFullYear()} Francisco Casillas
 				</div>
 
-				{/* Centro absoluto */}
-				<div className="absolute inset-0 flex justify-center items-center pointer-events-none">
-					<div className="flex gap-4 text-base text-gray-500 pointer-events-auto">
-						<a
-							href="https://github.com/franciscoxcode"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="hover:text-black"
-						>
-							<FaGithub />
-						</a>
-						<a
-							href="https://www.linkedin.com/in/franciscoxcode"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="hover:text-black"
-						>
-							<FaLinkedin />
-						</a>
-						<a
-							href="https://x.com/franciscoxcode"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="hover:text-black"
-						>
-							<FaXTwitter />
-						</a>
-					</div>
+				{/* Center: Social Icons */}
+				<div className="flex justify-center gap-4 text-gray-500 text-xl">
+					<a
+						href="https://github.com/franciscoxcode"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<FaGithub />
+					</a>
+					<a
+						href="https://www.linkedin.com/in/franciscoxcode"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<FaLinkedin />
+					</a>
+					<a
+						href="https://x.com/franciscoxcode"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<FaTwitter />
+					</a>
+					<a
+						href="mailto:fxcasillas.dev@gmail.com"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<FaEnvelope />
+					</a>
+				</div>
+
+				{/* Right: Built with */}
+				<div className="text-gray-500 w-full md:w-auto text-center md:text-right text-md">
+					Built with care using Next.js & Tailwind CSS 🧑‍💻
 				</div>
 			</div>
 		</footer>
