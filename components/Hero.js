@@ -14,15 +14,15 @@ export default function Hero() {
 						width={128}
 						height={128}
 						className="rounded-full object-cover mx-auto border border-gray-300"
-					/>{" "}
+					/>
+					{"   "}
 				</div>
 
-				<h2 className="text-xl font-bold leading-tight">
-					Francisco
-					<br />
-					Casillas
-				</h2>
-				<p className="text-sm text-gray-500 mt-2">iOS App Development</p>
+				<h2 className="text-xl font-bold leading-tight">Francisco Casillas</h2>
+				<p className="text-sm text-gray-500 mt-1">iOS App Developer</p>
+				<p className="text-green-500 text-sm mt-3">
+					<span className="mr-4">🟢</span>Looking for an iOS internship
+				</p>
 				<div className="flex justify-center gap-5 mt-6 border-t pt-4 border-gray-300">
 					<a
 						href="https://github.com/franciscoxcode"
