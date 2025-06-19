@@ -14,8 +14,8 @@ Built using Next.js and Tailwind CSS.
 
 🔗 [Visit the site](https://portfolio-zeta-dun-44.vercel.app)
 
-
 ---
+
 ## 📷 Screenshot
 
 <img width="949" alt="Screenshot 2025-06-12 at 6 44 15 p m" src="https://github.com/user-attachments/assets/ffc05bb4-3c74-4777-bd17-53c0d9906a12" />
@@ -29,7 +29,6 @@ Built using Next.js and Tailwind CSS.
 ![MDX](https://badgen.net/badge/Content/MDX/pink?icon=markdown&label=) – Markdown with React components for blog posts  
 ![GitHub](https://badgen.net/badge/Version%20Control/GitHub/black?icon=github&label=) – Version control and code collaboration  
 ![Vercel](https://badgen.net/badge/Deploy/Vercel/green?icon=vercel&label=) – Deployment platform for frontend frameworks
-
 
 ---
 
@@ -53,7 +52,8 @@ Built using Next.js and Tailwind CSS.
 - Blog powered by MDX with full post layout and date formatting
 - Dynamic routing for individual blog posts (`/blog/[slug]`)
 - Footer with central social icons and metadata at the edges
-- Automatic deployment with Vercel on every push t
+- Automatic deployment with Vercel on every push
+- Responsive footer layout that adapts to all screen sizes
 
 ---
 
@@ -65,10 +65,11 @@ Built using Next.js and Tailwind CSS.
 - [x] Create hero with professional background and links
 - [x] Build responsive navigation (Navbar + Footer)
 - [x] Add long-form article support via Markdown
+- [x] Make footer responsive and mobile-friendly
 - [ ] Add project cards with screenshots and GitHub buttons
 - [ ] Add blog posts with images and formatting
 - [ ] Improve layout with animations and transitions
-- [ ] Add dark mode toggle (light / dark theme)  
+- [ ] Add dark mode toggle (light / dark theme)
 - [ ] Implement blog post filters (by tag, date or keyword)
 
 ---

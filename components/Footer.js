@@ -42,7 +42,7 @@ export default function Footer() {
 				</div>
 
 				{/* Right: Built with */}
-				<div className="text-gray-500 w-full md:w-auto text-center md:text-right text-md">
+				<div className="text-gray-500 w-full md:w-auto text-center md:text-right text-xs">
 					Built with care using Next.js & Tailwind CSS 🧑‍💻
 				</div>
 			</div>
